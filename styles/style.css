@@ -1,7 +1,25 @@
+/* Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+
 /* Global Styling */
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
+}
+body {
+  font-family: "Playfair Display", serif !important;
+}
+ul {
+  list-style: none;
+}
+/* Header */
+.header .btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
 }
