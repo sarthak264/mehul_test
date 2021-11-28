@@ -23,6 +23,13 @@ body {
 ul {
   list-style: none;
 }
+.bg {
+  position: fixed;
+  bottom: 0%;
+  height: 100vh;
+  right: 0;
+  z-index: -999;
+}
 
 /* Header */
 .header {
@@ -55,4 +62,27 @@ ul {
 }
 .main-nav .active {
   color: var(--heading);
+}
+/* Main */
+.title {
+  color: var(--title);
+}
+.description {
+  color: var(--description);
+  line-height: 2;
+}
+.main-img {
+  width: auto;
+  max-width: 100%;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  /* .bg{
+    top: 0; 
+    bottom: auto;
+  } */
+  .description {
+    max-width: 470px;
+  }
 }
