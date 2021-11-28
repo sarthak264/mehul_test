@@ -1,5 +1,13 @@
 /* Fonts Import */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("http://fonts.cdnfonts.com/css/helvetica-neue-9");
+
+/* Variables */
+:root {
+  --heading: #3c3d31;
+  --description: #423526;
+  --links: #4f5665cc;
+}
 
 /* Global Styling */
 *,
@@ -9,12 +17,17 @@
   padding: 0;
 }
 body {
+  background-color: #e7ecf2 !important;
   font-family: "Playfair Display", serif !important;
 }
 ul {
   list-style: none;
 }
+
 /* Header */
+.header {
+  color: var(--links);
+}
 .header .btn {
   width: 2.5rem;
   height: 2.5rem;
@@ -22,4 +35,24 @@ ul {
   align-items: center;
   justify-content: center;
   font-size: 1.25rem;
+}
+
+/* Navbar */
+.logo-container {
+  background-color: #000;
+}
+.logo-container .logo {
+  letter-spacing: 1px;
+}
+.consulation-btn {
+  font-family: "Helvetica 25 UltraLight", sans-serif;
+  font-weight: 700 !important;
+  border-radius: 0.4rem !important;
+  background-color: var(--heading) !important;
+}
+.main-nav {
+  color: var(--links);
+}
+.main-nav .active {
+  color: var(--heading);
 }
