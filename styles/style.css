@@ -1,6 +1,6 @@
 /* Fonts Import */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
-@import url("http://fonts.cdnfonts.com/css/helvetica-neue-9");
+@import url("http://fonts.cdnfonts.com/css/helvetica-255");
 
 /* Variables */
 :root {
@@ -51,10 +51,13 @@ ul {
   letter-spacing: 1px;
 }
 .consulation-btn {
-  font-family: "Helvetica 25 UltraLight", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-weight: 700 !important;
   border-radius: 0.4rem !important;
   background-color: var(--heading) !important;
+}
+.border-div {
+  align-self: stretch !important;
 }
 .main-nav {
   color: var(--links);
@@ -62,6 +65,7 @@ ul {
 .main-nav .active {
   color: var(--heading);
 }
+
 /* Main */
 .title {
   color: var(--title);
@@ -79,5 +83,10 @@ ul {
 @media screen and (min-width: 768px) {
   .description {
     max-width: 470px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .border-div {
+    border-top: 1px solid #ababab;
   }
 }
